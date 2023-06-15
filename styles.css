@@ -14,9 +14,7 @@ body {
     max-width: 2550px;
     min-height: 1000px;
     margin: 0.25rem;
-
-    /****** under max-width should still have margin ******/
-}
+    }
 
 a {
     color: white;
