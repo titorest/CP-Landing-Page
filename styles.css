@@ -73,7 +73,7 @@ h1 {
 
 .banner {
     height: 50rem;
-    background-image: url('https://blog.saginfotech.com/wp-content/uploads/2018/10/big-relief-exporters.jpg');
+    background-image: url(https://blog.saginfotech.com/wp-content/uploads/2018/10/big-relief-exporters.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
