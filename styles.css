@@ -172,24 +172,22 @@ button {
     .header-menu {
         display: none;
     }
-
+*/
     header {
-        display: block;
-    } */
+        display: flex;
+    } 
 
     header h1 {
         font-size: 1.75rem;
-        padding-top: 1%;
     }
 
     header ul {
         font-size: 1.25rem;
         padding: 0;
-        margin: 0 0 1rem 1%;
     }
 
     .banner {
-        height: 40rem;
+        height: 35rem;
         display: flex;
         flex-flow: column;
     }
@@ -210,7 +208,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 575px) {
     .header-menu {
         display: none;
     }
@@ -222,6 +220,16 @@ button {
     header {
         display: block;
     }
+
+        header ul {
+            padding: 0;
+            margin: 0 0 2%;
+            font-size: 1.25rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
 }
 
 @media only screen and (max-width: 325px) {
