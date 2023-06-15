@@ -14,7 +14,9 @@ body {
     max-width: 2550px;
     min-height: 1000px;
     margin: 0.25rem;
-    }
+
+    /****** under max-width should still have margin ******/
+}
 
 a {
     color: white;
@@ -165,7 +167,7 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-    .header-menu-mobile {
+    /* .header-menu-mobile {
         display: grid;
     }
 
@@ -175,7 +177,7 @@ button {
 
     header {
         display: block;
-    }
+    } */
 
         header h1 {
             font-size: 1.75rem;
@@ -195,7 +197,7 @@ button {
     }
 
     .content-center {
-        width: 13rem;
+        width: 20rem;
         margin: 0 auto;
         top: .5rem;
     }
@@ -241,7 +243,6 @@ button {
     }
 
     .content-center {
-        right: 10.5rem;
         width: 13rem;
         margin-bottom: 1rem;
         top: auto;
