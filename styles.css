@@ -64,6 +64,10 @@ h1 {
     align-content: center;
 }
 
+.header-menu-mobile {
+    display: none;
+}
+
 
 /* Main */
 
@@ -142,28 +146,42 @@ button {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 325px) {
+    .header-menu-mobile {
+        display: grid;
+    }
+    
+    .header-menu {
+        display: none;
+    }
+
     header {
-        width: 30.5rem;
-        align-items: center;
+        display: block;
     }    
         header h1 {
-            font-size: 1.25rem
+            font-size: 1rem;
+            text-shadow: none;
+            padding-top: 1%;
         }
 
-        header li {
-            margin-left: 7rem;
+        header ul {
+            font-size: .9rem;
+            padding: 0;
+            margin: 0 0 1rem 1%;
         }
 
     .banner {
         height: 40rem;
-        width: 73%;
+        display: flex;
+        flex-flow: column;
     }
 
     .content-center {
-        width: 15rem;
+        right: 10.5rem;
+        width: 13rem;
+        margin-bottom: 1rem;
+        top: auto;
     }
-
         .content-center p {
             font-size: 1rem;
         }
@@ -171,10 +189,6 @@ button {
     button {
         font-size: 1rem;
         padding: 1rem 1rem;
-    }
-
-    #about-us, #address, #terms {
-        display: none;
     }
 }
 
@@ -216,26 +230,21 @@ footer {
     }
 
 
-@media only screen and (max-width: 480px) {
-    footer ul {
-        width: 70%;
-        justify-content: space-evenly;
-        margin: .4rem;
-    }
-
-    footer li {        
-        font-size: 1rem;
+@media only screen and (max-width: 325px) {
+    .footer-menu {
+        display: none;
     }
 
    .copyright {
-       text-align: center;
+       text-align: left;
    }
 
     .copyright p {
         font-size: .75rem;
-        right: 6rem;
         position: relative;
         margin: .4rem;
+        text-align: left;
+        margin-left: 3%;
     }
 
 
