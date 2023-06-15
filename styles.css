@@ -22,6 +22,7 @@ body {
 a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
     
 }
 
@@ -115,6 +116,7 @@ button {
     margin-bottom: 2rem;
     border: none;
     letter-spacing: .1rem;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -143,6 +145,53 @@ button {
     .content-center {
         margin: 0 auto;
         margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-menu-mobile {
+        display: grid;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+        header h1 {
+            font-size: 1.75rem;
+            padding-top: 1%;
+        }
+
+        header ul {
+            font-size: 1.25rem;
+            padding: 0;
+            margin: 0 0 1rem 1%;
+        }
+
+    .banner {
+        height: 40rem;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .content-center {
+        right: 2rem;
+        width: 13rem;
+        margin-bottom: 1rem;
+        top: .5rem;
+    }
+
+        .content-center p {
+            font-size: 1rem;
+        }
+
+    button {
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
     }
 }
 
@@ -229,25 +278,43 @@ footer {
         text-align: center;
     }
 
+@media only screen and (max-width: 768px) {
+    .footer-menu {
+        display: none;
+    }
+
+    .copyright {
+        text-align: left;
+    }
+
+        .copyright p {
+            font-size: .9rem;
+            position: relative;
+            margin: .4rem;
+            text-align: left;
+            margin-left: 3%;
+        }
+    }
 
 @media only screen and (max-width: 325px) {
     .footer-menu {
         display: none;
     }
 
-   .copyright {
-       text-align: left;
-   }
-
-    .copyright p {
-        font-size: .75rem;
-        position: relative;
-        margin: .4rem;
+    .copyright {
         text-align: left;
-        margin-left: 3%;
     }
 
+        .copyright p {
+            font-size: .75rem;
+            position: relative;
+            margin: .4rem;
+            text-align: left;
+            margin-left: 3%;
+        }
+    }
+    
 
 
-    /* add Javascript here */
+        /* add Javascript here */
 
