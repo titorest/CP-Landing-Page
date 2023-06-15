@@ -14,15 +14,12 @@ body {
     max-width: 2550px;
     min-height: 1000px;
     margin: 0.25rem;
-
-    /****** under max-width should still have margin ******/
 }
 
 a {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    
 }
 
     a:hover {
@@ -141,10 +138,11 @@ button {
     .banner {
         height: 30rem;
     }
-    
+
     .content-center {
         width: 30rem;
     }
+
         .content-center p {
             font-size: 1.5rem;
         }
@@ -154,7 +152,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 1024px) {    /* shrink boxes and text at 1600px */
+@media only screen and (max-width: 1024px) { 
     .banner {
         display: block;
         height: 40rem;
@@ -179,16 +177,16 @@ button {
         display: block;
     } */
 
-        header h1 {
-            font-size: 1.75rem;
-            padding-top: 1%;
-        }
+    header h1 {
+        font-size: 1.75rem;
+        padding-top: 1%;
+    }
 
-        header ul {
-            font-size: 1.25rem;
-            padding: 0;
-            margin: 0 0 1rem 1%;
-        }
+    header ul {
+        font-size: 1.25rem;
+        padding: 0;
+        margin: 0 0 1rem 1%;
+    }
 
     .banner {
         height: 40rem;
@@ -199,7 +197,7 @@ button {
     .content-center {
         width: 20rem;
         margin: 0 auto;
-        top: .5rem;
+        top: auto;
     }
 
         .content-center p {
@@ -212,18 +210,33 @@ button {
     }
 }
 
+@media only screen and (max-width: 425px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header-menu-mobile {
+        display: grid;
+    }
+
+    header {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 325px) {
     .header-menu-mobile {
         display: grid;
     }
-    
+
     .header-menu {
         display: none;
     }
 
     header {
         display: block;
-    }    
+    }
+
         header h1 {
             font-size: 1rem;
             text-shadow: none;
@@ -247,6 +260,7 @@ button {
         margin-bottom: 1rem;
         top: auto;
     }
+
         .content-center p {
             font-size: 1rem;
         }
@@ -310,7 +324,7 @@ footer {
             text-align: left;
             margin-left: 3%;
         }
-    }
+}
 
 @media only screen and (max-width: 325px) {
     .footer-menu {
@@ -328,9 +342,9 @@ footer {
             text-align: left;
             margin-left: 3%;
         }
-    }
-    
+}
 
 
-        /* add Javascript here */
+
+/* add Javascript here */
 
