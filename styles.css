@@ -1,8 +1,3 @@
-/* Colors:
-yellow: yellow - button
-blue: #4D70F0 - content center
-dark blue: #243470 - header  */
-
 /* Global */
 
 html {
@@ -25,21 +20,19 @@ a {
     color: white;
     text-decoration: none;
     cursor: pointer;
-}
+}    
 
-    a:hover {
-        color: lightblue;
-    }
-
-li:hover {
+/*li:hover {
     transform: scale(1.1);
-}
+}*/
 
 
 /* Header */
 
+
 header {
-    background-color: #243470;
+    background: -webkit-linear-gradient( 
+        180deg, indigo 0%, #234470 37.25%, midnightblue 100% );
     display: flex;
     justify-content: space-between;
     padding: 0 2%;
@@ -49,9 +42,14 @@ header {
     header ul {
         list-style: none;
         display: flex;
-        width: 16rem;
+        width: 18rem;
         justify-content: space-between;
         font-size: 1.25rem;
+    }
+
+    header a:hover {
+        transition: all 0.5s ease-out;
+        font: 1.75rem bold;
     }
 
 h1 {
@@ -91,7 +89,7 @@ h1 {
 }
 
 .content-center {
-    background-color: #4D70F0;
+    background-color: #4D70A1;
     border: 1px solid #979797;
     border-radius: 4px;
     z-index: 2;
@@ -118,6 +116,13 @@ button {
     border: none;
     letter-spacing: .1rem;
     cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+    button:hover,
+    button:focus {
+        transform: scale(1.1);
+    }
 }
 
 /*
@@ -310,6 +315,11 @@ footer {
     width: 100%;
     padding-top: .05%;
 }
+
+    footer li:hover {
+        transform: scale(1.1);
+    }
+
 
 .copyright {
     display: block;
