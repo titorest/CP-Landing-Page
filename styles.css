@@ -20,7 +20,11 @@ a {
     color: white;
     text-decoration: none;
     cursor: pointer;
-}    
+}
+
+    a:hover {
+        color: lightblue;
+    }
 
 /*li:hover {
     transform: scale(1.1);
