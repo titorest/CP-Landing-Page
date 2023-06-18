@@ -12,9 +12,9 @@ html {
 body {
     background-color: hsl(0, 0%, 95%);
     max-width: 2550px;
-    /*height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;*/
+    height: 100vh;
+    /* display: grid;
+    grid-template-rows: auto 1fr auto; */
     margin: 0.25rem;
 }
 
@@ -282,6 +282,7 @@ button {
     }
 }
 
+
 /* Footer */
 
 footer {
@@ -302,6 +303,7 @@ footer {
         width: 100%;
         padding-right: 2rem;
         margin-top: 0.5%;
+        margin-bottom: 0;
     }
 
 .footer-menu {
@@ -317,6 +319,7 @@ footer {
         font-size: 1rem;
         text-align: center;
         margin-bottom: 0.5%;
+        margin-top: 0;
     }
 
 @media only screen and (max-width: 768px) {
@@ -355,6 +358,16 @@ footer {
         }
 }
 
+
+@media only screen and (max-height: 800px) {
+    html {
+        color: red;
+    }
+
+    .banner {
+        height: 80vh;
+    }
+}
 
 
 /* add Javascript here */
