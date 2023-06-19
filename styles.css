@@ -270,6 +270,9 @@ button {
         font-size: .625rem;
         width: 32.5rem;
     }
+    
+    .banner {
+        height: 95vh;
 }
 
 @media only screen and (max-width: 375px) {
