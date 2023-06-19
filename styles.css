@@ -43,16 +43,18 @@ header {
     background: -webkit-linear-gradient( 180deg, indigo 0%, #234470 37.25%, midnightblue 100% );
     display: flex;
     justify-content: space-between;
-    padding: 0 2% 0 0.5%;
+    padding-left: 0.5%;
     letter-spacing: .1rem;
 }
 
     header ul {
         list-style: none;
         display: flex;
-        width: 18rem;
+        width: 35rem;
         justify-content: space-between;
-        font-size: 1.25rem;
+        align-items: center;
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
     }
 
 h1 {
@@ -82,11 +84,19 @@ h1 {
     left: 1.5rem;
 }
 
+    .fa-user::before {
+        margin-right: .9rem;
+    }
+
 .fa-envelope {
     position: relative;
     right: 6.875rem;
     top: .125rem;
 }
+
+    .fa-envelope::before {
+        margin-right: .9rem;
+    }
 
 /* Main */
 
