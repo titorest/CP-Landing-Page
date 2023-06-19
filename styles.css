@@ -75,7 +75,7 @@ h1 {
     height: 2.25rem;
     position: relative;
     top: .75rem;
-    left: 1.375rem;
+    left: 1rem;
 }
 
 .fa-envelope {
@@ -92,7 +92,7 @@ h1 {
 }
 
 .banner {
-    height: 86.75vh;
+    height: 86vh;
     background-image: url('https://blog.saginfotech.com/wp-content/uploads/2018/10/big-relief-exporters.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -305,7 +305,7 @@ footer {
     justify-content: space-between;
     padding: .01%;
     color: white;
-    margin: 0;
+    margin: .5rem auto;
     width: 100%;
     letter-spacing: .1rem;
 }
@@ -382,13 +382,22 @@ footer {
 }
 
 
-@media only screen and (max-height: 800px) {
-    html {
-        color: red;
+@media only screen and (max-height: 1000px) {
+    .banner {
+        height: 84vh;
     }
+}
 
+
+@media only screen and (max-height: 800px) {
     .banner {
         height: 80vh;
+    }
+}
+
+@media only screen and (max-height: 675px) {
+    .banner {
+        height: 78vh;
     }
 }
 
