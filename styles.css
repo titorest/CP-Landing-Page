@@ -146,7 +146,7 @@ button {
     letter-spacing: .1rem;
     cursor: pointer;
     /* transition: all 0.5s ease-out; */
-     transition: transform .5s, font-size .5s, color .5s, margin-right .5s;
+     transition: color .5s, margin-right .5s;
 }
 
     button:hover,
