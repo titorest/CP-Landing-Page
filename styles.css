@@ -61,15 +61,28 @@ h1 {
 }
 
 .header-menu {
-    display: grid;
+    display: flex;
     color: white;
-    align-content: center;
+    align-items: center;
 }
 
 .header-menu-mobile {
     display: none;
 }
 
+.fa-user {
+    color: white;
+    height: 2.25rem;
+    position: relative;
+    top: .75rem;
+    left: 1.375rem;
+}
+
+.fa-envelope {
+    position: relative;
+    right: 6.875rem;
+    top: .125rem;
+}
 
 /* Main */
 
